@@ -1,0 +1,235 @@
+.app {
+  font-family: Roboto;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.header {
+  font-family: Roboto;
+  background-color: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.restaurant-name {
+  color: #f97316;
+  cursor: pointer;
+  font-size: 22px;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.cart p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.badge {
+  background-color: #f97316;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.logout-btn {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background-color: #ea6c0a;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 16px 32px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 8px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.active-tab {
+  padding: 8px 18px;
+  border: 1px solid #f97316;
+  border-radius: 20px;
+  background: #f97316;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 32px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff;
+  margin-bottom: 4px;
+}
+
+.dish-left {
+  flex: 1;
+}
+
+.dish-left h4 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #1e293b;
+}
+
+.dish-left p {
+  margin: 4px 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+.desc {
+  font-size: 13px !important;
+  color: #94a3b8 !important;
+  max-width: 400px;
+}
+
+.veg {
+  width: 18px;
+  height: 18px;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.non-veg {
+  width: 18px;
+  height: 18px;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.non-veg .dot {
+  background-color: red;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.counter button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.counter span {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+.add-to-cart-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0f172a;
+}
+
+.not-available {
+  color: #ef4444 !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.addon {
+  color: #f97316 !important;
+  font-size: 12px !important;
+  font-style: italic;
+}
+
+.dish-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.dish-right img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.calories {
+  font-size: 12px !important;
+  color: #94a3b8 !important;
+}
